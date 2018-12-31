@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Coming Soon</title>
+      <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Dec 31, 2022 15:37:25").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+          // Get todays date and time
+          var now = new Date().getTime();
+          
+          // Find the distance between now an the count down date
+          var distance = countDownDate - now;
+          
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 200));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 25)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+          
+          // If the count down is over, write some text 
+          if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+      }, 1000);
+      </script>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+ <body>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <header class="masthead clearfix">
+            <div class="inner text-center">
+                <h4 class="masthead-brand" style="color: #0C3061;">Get In Touch</h4>
+                <h4 class="nav-masthead " style="color: #0C3061;">+91 9011901190</h4>
+            </div>
+           
+          </header>
+        
+             <hr>
+          <main role="main" class="inner cover">
+
+            <h1 class="cover-heading">Website is under construction</h1>
+            <p class="lead"></p>
+              <p id="demo" class="lead"></p>
+            <!--<p class="lead">
+              <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+            </p>-->
+          </main><hr>
+          <footer class="mastfoot">
+            <div class="inner">
+              
+               <span class=""> <a style="color: #0C3061;" href="mailto:info@xyz.com">info@xyz.com</a></span>
+               <p style="color: #0C3061;">Office No.1, IT-08 Building, Ground Floor, Qubix Business Park Pvt. Ltd. – SEZ,Near Blueridge Township, Hinjewadi, Phase – I, Pune – 411057</p><br>
+               <h6 style="color: #0C3061">© Copyright 2018. All Rights Reserved.</h6>
+            </div>
+           
+          </footer>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
